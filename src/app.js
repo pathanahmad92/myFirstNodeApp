@@ -76,6 +76,7 @@ app.get('/ouremployees',(req,res)=>{
 
 app.get('/todos',(req,res)=>{
     employeeService.getAllTodos((todos)=>{
+        console.log('This is todos')
         res.render('todos',{
             todos:todos,
             title : 'Todos'
