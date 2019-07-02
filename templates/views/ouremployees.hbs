@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        {{>header}}
+       <b> {{title}}</b>
+            Following are employees<br>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Employee Name</th><th>Mobile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each employees}}
+                        <tr>
+                            <td>
+                                {{EmployeeName}}
+                            </td>
+                            <td>
+                                {{MobileNumber}}
+                            </td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+
+        {{>footer}}
+    </body>
+</html>
+

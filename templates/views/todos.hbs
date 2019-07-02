@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        {{>header}}
+       <b> {{title}}</b>
+            Following are Todos<br>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>User Id</th><th>Title</th><th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each todos}}
+                        <tr>
+                            <td>
+                                {{id}}
+                            </td>
+                            <td>
+                                {{title}}
+                            </td>
+                            <td>
+                                {{completed}}
+                            </td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+
+        {{>footer}}
+    </body>
+</html>
+
